@@ -1,0 +1,6 @@
+US-baby-names1880-2008.csv
+
+ANNEE : année de naissance
+NOM : prénom
+POURCENTAGE : pourcentage d'enfants ayant reçu le même prénom cette année
+SEXE : boy ou girl

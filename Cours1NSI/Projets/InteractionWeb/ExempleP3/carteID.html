@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <title>Carte d'identité</title>
+        <link rel="icon" href="images/icone.ico">   <!-- icone de l'onglet -->
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styleID.css">
+        <script type="text/javascript" src="ID.js" defer="defer"></script>
+    </head>
+    <body>
+        
+
+        <section id="formulaire">
+            <h1>Carte d'identité CHIBI</h1>
+
+        
+
+        <form name="remplir">
+            <p>Indiquez votre superNom : <input id="nom" type="text" oninput=ecrireNom()></p>
+
+            <p><label for="menu_genre">Qui êtes-vous ?</label>
+        <select name="menu_genre" id="menu" onchange="choixSexe()">
+          <option value="g">--Choix--</option>
+          <option value="H">Homme</option>
+          <option value="F">Femme</option>
+          <option value="A">Autre</option>
+        </select></p>
+
+        <div id="image">
+        <div id="homme"  style="visibility: hidden">
+        <!--<label for="liste_hommes">Choisissez :</label>-->
+        <select name="liste_hommes" id="liste_hommes" onchange="placerImageH()">
+          <option value="g">------</option>
+          <option value="1">aang</option>
+          <option value="2">batman</option>
+          <option value="3">captain</option>
+          <option value="4">deadpool</option>
+          <option value="5">hulk</option>
+          <option value="6">ironman</option>
+          <option value="7">spider</option>
+          <option value="8">starlord</option>
+        </select>
+        </div>
+
+        <div id="femme"  style="visibility: hidden">
+            <!--<label for="liste_femmes">Choisissez :</label>-->
+            <select name="liste_femmes" id="liste_femmes" onchange="placerImageF()">
+              <option value="g">------</option>
+              <option value="1">blackwidow</option>
+              <option value="2">gamora</option>
+              <option value="3">kora</option>
+              <option value="4">wonderwoman</option>
+            </select>
+        </div>
+
+        <div id="autre"  style="visibility: hidden">
+            <!--<label for="liste_autres">Choisissez :</label>-->
+            <select name="liste_autres" id="liste_autres" onchange="placerImageA()">
+                <option value="g">------</option>
+                <option value="1">Chat</option>
+                <option value="2">Zombi</option>
+                <option value="3">Vampire</option>
+                <option value="4">Tirex</option>
+                <option value="5">Loup-Garou</option>
+            </select>
+        </div>
+        </div>
+
+            <div id="theme"> 
+            <p>Choisissez le thème :</p>
+            <p>
+                <input type="radio" name="t1" id="t1" value="violet" style='visibility:hidden'></input>
+                <label for="vi"><img src="images/themes/violet.png" alt="violet" width="30"  onclick="theme(1)"></label>
+                <input type="radio" name="t2" id="t2" value="vert" style='visibility:hidden'></input>
+                <label for="ve"><img src="images/themes/vert.png" alt="vert" width="30" onclick="theme(2)"></label>
+                <input type="radio" name="t3" id="t3" value="bleu" style='visibility:hidden'></input>
+                <label for="bl"><img src="images/themes/bleu.png" alt="bleu" width="30" onclick="theme(3)"></label>
+                <input type="radio" name="t4" id="t4" value="orange" style='visibility:hidden'></input>
+                <label for="bl"><img src="images/themes/orange.png" alt="orange" width="30" onclick="theme(4)"></label>
+                <input type="radio" name="t4" id="t5" value="jaune" style='visibility:hidden'></input>
+                <label for="bl"><img src="images/themes/jaune.png" alt="jaune" width="30" onclick="theme(5)"></label>
+            </p>
+            </div>
+
+            <div id="zoneDesc">
+              <label for="descrp">Décrivez-vous :</label>
+
+              <textarea id="descrp" rows="4" cols="30">
+               
+              </textarea> 
+              <p><input id="btn" type="button" value="Afficher" onclick="envoi()"></p>
+
+              <p><input id="btn2" type="button" value="Imprimer" onclick="imprimer()"></p>
+            </div>
+                         
+        </form>
+        </section>
+
+        <section id="carte">
+            <h2>ID : <span id="nomID">Dragonat</span></h2>
+            
+            <div id="photoIm">
+              <img id="perso" src="images/persos/dragoart.png" alt="PhotoID">
+              <p id="zone" ></p>
+            </div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+h1{                        /*Ici on affecte toutes les balises h1*/
+  color : red;
+  font-size : 75px;
+}
+
+#titre1{                  /*on travaille sur la balise possédant l'identifiant titre1*/
+  color : green;
+  font-size : 100px;
+}
+
+.first{                  /*on travaille sur les balises de classe first*/
+  color : blue;
+  font-size : 50px;
+}

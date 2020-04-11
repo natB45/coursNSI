@@ -1,0 +1,46 @@
+body{
+    background-color: bisque;     /*couleur de fond de la page*/
+}
+header{
+    background-image: url("images/tianjin.jpg");   /*on place une image dans le fond de la balise header*/
+    color:indigo;
+    margin:50px 120px 10px 120px;   /*on indique la marge extérieure de la boite*/
+    padding:20px 20px 20px 20px;    /*on indique la marge intérieure à la boite*/
+    text-align: center;             /*on centre le texte*/  
+}
+
+h1{
+    font-size: 80px;               /*taille du titre*/
+}
+
+a{
+    font-size: 40px;              /*taille du lien*/
+    font-style: oblique;
+}
+
+section{
+    background-color:lightpink;   /*couleur de fond de la section*/
+    display: flex;                  /*on va utiliser flexbox pour organiser les blocks de la section*/
+    margin:20px 20px 20px 20px; 
+    padding:10px 30px 10px 30px;
+    justify-content: space-between;  /*les blocks de la section sont expacés de maière régulière*/
+}
+p:hover{
+    font-style: italic;              /*en passant sur le paragraphe, le texte s'affiche en italique*/
+    font-family: Impact, sans-serif;  /*et on change de police de caractère*/
+}
+
+footer{
+    border: 8px black solid;       /*on encadre le pied de page*/
+    box-shadow: 6px 20px 15px blue;   /*on fait l'ombre de la boite*/
+    width:350px;                      /*on choisit la largeur de la boite*/
+    margin: auto;
+    margin-bottom: 50px;
+}
+#titre_vid{
+    text-align: center;             /*on centre le titre de la vidéo*/
+    color: darkblue;
+}
+#vid{
+    margin-left:13px;              /*on décale la vidéo dans la boite*/
+}

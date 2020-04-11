@@ -1,0 +1,99 @@
+/*Charger une police de caractères*/
+@font-face {
+  font-family: amadeus;
+  src: url(fonts/amadeus/Amadeus.woff); /*adresse où trouver la police*/
+  }
+
+@font-face {
+  font-family: arbutus;
+  src: url(fonts/arbutus/Arbutus.ttf); 
+}
+
+h1{
+  text-align: center;
+  font-family: amadeus;
+}
+
+body{
+  margin-top: 5%;
+  background-color:lightblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#formulaire{
+  background-color: white;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-style: solid;
+  border-width: 0.5rem; 
+}
+
+/*Bloc de la carte d'ID*/
+#carte{
+  background-image: linear-gradient(red, yellow);
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  width:40%;
+  border-style: solid;
+  border-width: 0.5rem; 
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#homme{
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+#femme{
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+#autre{
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+#perso{
+  width:40%;
+  border-style: solid;
+  border-width: 0.5rem; 
+  border-radius: 2rem;
+}
+
+#photoIm{
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/*Blocs avec les listes d'images*/
+#image{
+  display: flex;
+  flex-direction: row;
+}
+
+/*paragraphe de la description*/
+#zone{
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin: auto;
+  width: 20rem;
+  height:12rem;
+  text-align: justify;
+  font-family: arbutus;
+  border-style: solid;
+  border-width: 0.1rem; 
+}
+
+#descrp{
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+#zoneDesc{
+  display: flex;
+  flex-direction: column;
+}
+
+/*bloc icones du theme*/
+#theme{
+  display: flex;
+  flex-direction: column;
+}

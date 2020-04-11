@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Portes Mystères</title>
+    <link rel="stylesheet" href="stylePortes.css">
+    <script type="text/javascript" src="dynamique.js" defer="defer"></script>
+  </head>
+  <body>
+    <h1 id="grostitre">Les portes mystères</h1>
+
+      <div id="images">
+        <img id="im1" src="porte1.jpg" alt="Une porte">
+        <img id="im2" src="porte2.jpg" alt="Une porte">
+        <img id="im3" src="porte3.jpg" alt="Une porte">
+      </div>
+      
+      <div id="liste">
+      <label for="portes">Choisissez une porte :</label>
+        <select name="menu_portes" id="menu" onchange="choisir()">
+          <option value="porte">--Choix--</option>
+          <option value="porte1">Porte n°1</option>
+          <option value="porte2">Porte n°2</option>
+          <option value="porte3">Porte n°3</option>
+        </select>
+      </div>
+       <form name="surprise">
+         <p><input id="bouton" type="button" value="Ouvrez la porte"  style="visibility: hidden" onclick="ouvrir()"></p>
+       </form>
+    
+</body>
+</html>
