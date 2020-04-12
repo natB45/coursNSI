@@ -58,6 +58,23 @@ p{
   flex-direction: row;
   justify-content: center;
 }
+
+#accueil{
+  text-align: center;
+}
+
+#exos{
+  text-align: center;
+}
+
+#formu{
+  text-align: center;
+}
+
+#projet{
+  text-align: center;
+}
+
 #py{
   text-align: center;
 }
@@ -85,11 +102,19 @@ p{
   text-align: center;
 }
 
+#algo{
+  text-align: center;
+}
+
 #pageArchi{
   text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+#micro{
+  text-align: center;
 }
 
 /*les liens*/
