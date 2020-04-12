@@ -1,0 +1,90 @@
+body{
+    background-image: url("sand.jpg");
+}
+
+h1{
+    text-align: center;
+    font-size: 100px;
+    font-family: Georgia;
+}
+
+#pvert{
+    color: green;
+    width: 50%;
+}
+
+#pbleu{
+    color: blue;
+}
+
+#mer{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    border-style: solid;
+    border-width: 5px;
+}
+
+#bloc{
+    display: flex;
+    flex-direction: row;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#ile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a{
+    font-size: 150%;
+}
+
+/*Le lien change de couleur lorsque la souris passe dessus.*/
+a:hover{
+    color:black;
+    text-shadow: 2px 2px 5px red;  /*une ombre flou au texte*/
+}
+
+/*Placement du menu déroulant*/
+#conteneur{
+    font-size: 50px;
+    text-align: center;
+}
+
+/*Taille du texte de la liste déroulante*/
+select{
+    font-size: 30px;
+}
+
+/*style du formulaire*/
+form{
+    font-size: 30px;
+}
+
+/*style bouton*/
+#bouton{
+    font-size: 30px;
+    color:black;
+    background-color: rgba(220, 0, 0, 1);
+    width: 130px;
+    border-style: solid;
+    border-color: brown;
+    border-radius: 10px;
+    border-width: 5px;
+}
+
+/*Taille bouton d'envoi*/
+#envoi{
+    font-size: 30px;
+    width: 130px;
+}

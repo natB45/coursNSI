@@ -9,12 +9,12 @@ body{
 
 h1{
   text-align: center;
-  text-shadow: 2px 2px 5px rgb(230, 9, 9);
+  text-shadow: 2px 2px 5px rgb(167, 46, 160);
   font-size: 3rem;
 }
 
 h2{
-  text-shadow: 2px 2px 5px rgb(42, 9, 230);
+  text-shadow: 2px 2px 5px rgb(51, 16, 245);
 }
 
 #menu{
@@ -52,6 +52,12 @@ h2{
 p{
   font-style: italic;
 }
+
+#pagepy{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 #py{
   text-align: center;
 }
@@ -59,9 +65,31 @@ p{
 #install{
   text-align: center;
 }
+#lienpy{
+  text-align: center;
+}
 
 #donnees{
   text-align: center;
+}
+
+#web{
+  text-align: center;
+}
+
+#archi{
+  text-align: center;
+}
+
+#structure{
+  text-align: center;
+}
+
+#pageArchi{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /*les liens*/
@@ -83,4 +111,12 @@ a:visited {
 
 a:hover {
   color: hotpink;
+}
+
+#retour{
+  text-align: center;
+  font-style: oblique;
+  font-size: 1.4rem;
+  color: rgb(136, 37, 7);
+  text-shadow: 2px 2px 5px rgb(141, 21, 0);
 }

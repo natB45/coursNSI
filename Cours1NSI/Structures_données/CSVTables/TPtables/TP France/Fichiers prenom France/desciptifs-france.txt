@@ -1,6 +1,0 @@
-Fichier Franc-prenoms-2018.csv
-
-SEXE : 1 Homme 2 Femme
-PREUSUEL : prénom usuel (1er prénom)
-ANNAIS : Année de naissance
-NOMBRE : la fréquence d'enfants ayant le même prénom cette année-là

@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+    font-size: 100px;
+    font-family: Georgia;}
+#images{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#liste{
+  margin-top: 20px;
+}
+
+
