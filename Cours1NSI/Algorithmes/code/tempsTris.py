@@ -31,19 +31,21 @@ def generateur_tableau(n):
 taille = int(input("Donner la taille du tableau à trier : "))
 
 tableau = generateur_tableau(taille)
+tableau1 = list(tableau)     #il faut créer deux autres listes pour les tests suivants
+tableau2 = list(tableau)     #car le tableau de départ sera trié après le premier test !
+
 
 depart = time.perf_counter()   #on note l'heure avant l'exécution
 tri_selection(tableau)
-temps = time.perf_counter() - depart  #on récupère l'heure après l'excution
-                                      #à laquelle on enlève l'heure de départ
+temps = time.perf_counter() - depart
 print("pour taille=", taille, " le temps d'exécution du tri par selection = ", temps)
 
 depart = time.perf_counter()   #on note l'heure avant l'exécution
-tri_insertion(tableau)
+tri_insertion(tableau1)
 temps = time.perf_counter() - depart
 print("pour taille=", taille, " le temps d'exécution du tri par insertion = ", temps)
 
 depart = time.perf_counter()   #on note l'heure avant l'exécution
-sorted(tableau)
+sorted(tableau2)
 temps = time.perf_counter() - depart
 print("pour taille=", taille, " le temps d'exécution du tri Python (sorted) = ", temps)
